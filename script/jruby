@@ -94,7 +94,7 @@ if $cygwin; then
   [ -n "$REPO" ] && REPO=`cygpath --path --windows "$REPO"`
 fi
 
-export GEM_HOME="$APPDIR"/.gems
+export GEM_HOME="$APPDIR"/vendor/bundle/
 export GEM_PATH=$GEM_HOME
 export PATH="$GEM_PATH"/bin:$PATH
 export BUNDLE_GEMFILE="$APPDIR"/Jemfile
