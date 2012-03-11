@@ -75,10 +75,10 @@ if [ ! -x "$JAVACMD" ] ; then
   exit 1
 fi
 
-if [ -z "$REPO" ]
-then
-  REPO="$BASEDIR"/.m2/repository
-fi
+# if [ -z "$REPO" ]
+# then
+#   REPO="$BASEDIR"/.m2/repository
+# fi
 
 CLASSPATH=$CLASSPATH_PREFIX:"$BASEDIR"/etc:"$REPO"/org/jruby/jruby-complete/1.6.3/jruby-complete-1.6.3.jar
 EXTRA_JVM_ARGUMENTS=""
